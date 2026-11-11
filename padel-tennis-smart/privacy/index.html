@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Padel Tennis Smart</title>
+<title>Privacy Policy — FourCourt</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
   h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
@@ -13,36 +13,45 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p><strong>Padel Tennis Smart</strong> — Last updated: July 2026</p>
+<p><strong>FourCourt</strong> (formerly Padel Tennis Smart) — Last updated: November 2026</p>
 
 <h2>1. Overview</h2>
-<p>Padel Tennis Smart is an Apple Watch app developed by André Machado for scoring padel and tennis matches. This page explains what data the App handles and how. The App does not require an account.</p>
+<p>FourCourt is an Apple Watch app developed by André Machado for scoring padel and tennis matches. This page explains what data the App handles and how. The App does not require an account. The App runs on Apple Watch only; an optional iPhone companion shows your match history.</p>
 
 <h2>2. Match History</h2>
-<p>The App stores your match history (scores, players, dates, duration) locally on your Apple Watch only. This data is never transmitted anywhere by default. Uninstalling the App permanently deletes it.</p>
+<p>The App stores your match history (scores, players, dates, duration) locally on your Apple Watch. If you use the iPhone companion, it receives a copy of that history from your watch through Apple's Watch Connectivity and keeps it on your iPhone. This data is never sent to our servers or any third party. Uninstalling the App removes the history stored on the watch and the companion's copy on the iPhone.</p>
 
 <h2>3. Health &amp; Heart Rate (HealthKit)</h2>
-<p>With your permission, the App reads your heart rate from Apple Health during a match to show live stats, and can save the match as a workout in Apple Health (including duration and heart rate). This information is handled by Apple's HealthKit and stays on your device and in your iCloud Health data under Apple's control — the App does not send it to any external server or third party. You can grant or revoke Health access at any time in the Watch/Health settings, and the App still works for scoring without it.</p>
+<p>With your permission, the App reads your heart rate from Apple Health during a match to show live stats, and can save the match as a workout in Apple Health (including duration and heart rate). This information is handled by Apple's HealthKit and stays on your Apple Watch and in your iCloud Health data under Apple's control. Heart rate and workout data are never included in group rooms and are not sent to any external server or third party. You can grant or revoke Health access at any time in the Watch/Health settings, and the App still works for scoring without it.</p>
 
 <h2>4. Voice Commands (optional)</h2>
 <p>The App lets you record points using voice commands, using your device's microphone and the operating system's speech recognition service (Apple). Audio is processed by the OS to convert speech to text — the App does not record, store, or send audio to any external server. This permission is optional; manual score entry works without it.</p>
 
-<h2>5. Multiplayer Rooms (optional)</h2>
-<p>If you choose to use the multiplayer feature, devices in the same match room synchronise the live score through a Google Firebase Realtime Database. The only data exchanged is the match state (scores), short team labels (such as "T1" / "T2"), an anonymous per-device identifier, and timestamps used to keep the room in sync. No real names, contacts, location, or health data are sent. Room data is temporary and used only to mirror the score between devices during a match. This feature is entirely optional — the App fully works offline for solo scoring.</p>
+<h2>5. Group Rooms (optional)</h2>
+<p>Solo scoring works fully offline and never uses the network. Group play is optional: when you create or join a group room, devices in the same room keep the score in sync through Google Firebase.</p>
+<ul>
+  <li><strong>Anonymous sign-in.</strong> The first time you use group play, the App signs your watch in to Firebase Authentication anonymously. This creates a random identifier stored on your watch. It is not linked to your name, email address, Apple ID or any other personal information, and it is used only so the database can check which device may write to a room. It is not used for advertising or tracking.</li>
+  <li><strong>What a room contains.</strong> The 4-character room code; the room creation time and start time; the team (A or B) and a generic label for each player ("Player 1" to "Player 4"; the App does not ask for or send names); a last-seen timestamp used to show who is still connected; and the current match score (sets, games, serve, winner and the rules chosen for the match).</li>
+  <li><strong>Where it is stored.</strong> In a Firebase Realtime Database in the European Union (europe-west1, Belgium). The App sends this data over encrypted HTTPS connections.</li>
+  <li><strong>Who can access it.</strong> Only devices that signed in anonymously can read a room, and the database rules allow each device to change only its own player entry. Only the room's host can create or delete the room.</li>
+  <li><strong>How long it is kept.</strong> The host's watch deletes the room when the host ends group play, and each guest's entry is removed when that guest leaves. The App does not show or join rooms older than 6 hours. If the App is closed unexpectedly or a watch loses its connection, the room may remain in the database with the contents listed above until it is removed. The App does not currently delete such leftover rooms automatically.</li>
+  <li><strong>What is never sent.</strong> Your name, contacts, location, photos, Apple ID, health data or heart rate.</li>
+</ul>
 
 <h2>6. In-App Purchases</h2>
-<p>The Premium feature is purchased and processed directly by Apple through the App Store using StoreKit. The App verifies your entitlement locally via Apple's transaction records and has no access to payment details (card numbers, etc.), which are handled entirely by Apple. The App does not use any third-party purchase or subscription manager.</p>
+<p>The Premium feature is purchased and processed directly by Apple through the App Store using StoreKit. The App verifies your entitlement locally via Apple's transaction records and has no access to payment details (card numbers, etc.), which are handled entirely by Apple. The App stores the result of that check on your device. The App does not use any third-party purchase or subscription manager.</p>
 
 <h2>7. Third-Party Services</h2>
 <ul>
   <li>Apple App Store — payment processing and purchase verification</li>
   <li>Apple HealthKit — heart rate and workout data (on-device)</li>
-  <li>Google Firebase — optional multiplayer score sync</li>
+  <li>Apple speech recognition — voice commands, when enabled</li>
+  <li>Google Firebase (Authentication and Realtime Database) — anonymous sign-in and score sync for group rooms only. Google, as the operator of Firebase, may process the IP address of each request. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
 </ul>
 <p>The App does not use advertising, analytics, or behavioral tracking.</p>
 
 <h2>8. Your Choices</h2>
-<p>Since match history and health data stay on your device, you can delete them at any time by clearing the App's data, revoking Health access, or uninstalling the App. For purchase-related data held by Apple, requests can be made through Apple's support channels.</p>
+<p>Match history and Health data stay on your devices, so you can delete them at any time by clearing the App's data, revoking Health access, or uninstalling the App. You can leave a group room at any time from the App. The App has no account, so there is nothing to close. Because the anonymous Firebase identifier is not linked to you, it cannot be matched to you; it is not removed automatically when you uninstall the App. For purchase-related data held by Apple, requests can be made through Apple's support channels.</p>
 
 <h2>9. Children's Privacy</h2>
 <p>The App does not knowingly collect data from children under 13.</p>
