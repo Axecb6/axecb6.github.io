@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — FourCourt</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
+  h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  p, li { font-size: 0.97rem; } ul { padding-left: 1.4rem; }
+  a { color: #0070f3; } footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<h1>Política de Privacidade</h1>
+<p><strong>FourCourt</strong> (antes Padel Tennis Smart) — Última atualização: 14 de novembro de 2026 · <a href="../">English version</a></p>
+
+<h2>1. Responsável</h2>
+<p>O FourCourt é uma app para Apple Watch desenvolvida por André Machado, programador individual com sede em Portugal, responsável pelo tratamento descrito nesta página. Contacto: <a href="mailto:apps.support.cbaxe6@gmail.com">apps.support.cbaxe6@gmail.com</a>.</p>
+<p>Em resumo: a app não tem contas e não pede o teu nome, email, contactos nem localização. Os jogos a solo, o histórico e os dados de Saúde nunca saem do relógio. Só as salas de grupo, que são opcionais, usam a internet, com um identificador anónimo.</p>
+
+<h2>2. Histórico de jogos (só no relógio)</h2>
+<p>A app guarda o histórico de jogos (resultados, datas, duração e as etiquetas genéricas dos jogadores) no teu Apple Watch. Nunca é enviado para nós nem para terceiros. Desinstalar a app apaga-o.</p>
+
+<h2>3. Saúde e ritmo cardíaco (HealthKit, opcional)</h2>
+<p>Com a tua autorização, a app lê o ritmo cardíaco da app Saúde durante o jogo e pode guardar o jogo como treino na app Saúde (duração e ritmo cardíaco). Estes dados são tratados pelo HealthKit da Apple e ficam nos teus aparelhos e nos teus dados de Saúde, sob controlo da Apple. Nunca entram nas salas de grupo, nunca são enviados para servidores ou terceiros e nunca são usados para publicidade. Podes retirar o acesso a qualquer momento nas definições da app Saúde; o marcador funciona sem ele.</p>
+
+<h2>4. Salas de grupo (opcional)</h2>
+<p>O marcador a solo funciona sem internet. Quando escolhes criar ou entrar numa sala de grupo, os relógios dessa sala partilham o mesmo resultado através do Google Firebase.</p>
+<ul>
+  <li><strong>Início de sessão anónimo.</strong> Na primeira vez que usas o modo grupo, a app inicia sessão no Firebase Authentication de forma anónima. Isto cria um identificador aleatório, guardado no Porta-chaves (Keychain) do relógio. Não está ligado ao teu nome, email, Apple ID nem a qualquer outra informação sobre ti.</li>
+  <li><strong>O que a sala contém.</strong> O código da sala, com 6 caracteres; quando a sala foi criada e começou; para cada jogador, o identificador anónimo, a equipa (A ou B), uma etiqueta genérica ("Player 1" a "Player 4") e a hora a que foi visto por último; e o resultado atual e as regras do jogo. A app não pede nem envia nomes.</li>
+  <li><strong>Onde fica.</strong> Numa base de dados Firebase Realtime Database na União Europeia (europe-west1, Bélgica), através de ligações HTTPS encriptadas.</li>
+  <li><strong>Quem lhe acede.</strong> Só aparelhos com sessão iniciada que saibam o código conseguem ler uma sala; não é possível listar salas. Cada aparelho só altera a sua própria entrada, só os jogadores da sala atualizam o resultado e só o anfitrião cria, começa ou apaga a sala.</li>
+  <li><strong>Durante quanto tempo.</strong> O relógio do anfitrião apaga a sala quando o anfitrião a fecha, e a entrada de um convidado é removida quando ele sai. A app ignora salas com mais de 6 horas. Se um relógio perder a ligação ou a app fechar inesperadamente, pode ficar na base de dados uma sala com o conteúdo acima até ser apagada; não contém nada que te identifique.</li>
+  <li><strong>O que nunca é enviado.</strong> O teu nome, contactos, localização, fotografias, Apple ID, dados de saúde ou ritmo cardíaco.</li>
+</ul>
+
+<h2>5. Compra dentro da app</h2>
+<p>O FourCourt Premium é comprado e processado pela Apple através da App Store. A app confirma a compra com o StoreKit da Apple no próprio aparelho e guarda o resultado localmente. Nunca vemos os teus dados de pagamento, o teu nome ou o teu Apple ID. A app não usa nenhum serviço de compras de terceiros.</p>
+
+<h2>6. Fundamento jurídico (RGPD)</h2>
+<ul>
+  <li><strong>Salas de grupo:</strong> execução do serviço que pedes (artigo 6.º, n.º 1, alínea b) do RGPD). Sem o identificador anónimo e os dados da sala, o resultado partilhado não funciona.</li>
+  <li><strong>Dados de saúde:</strong> tratados só nos teus aparelhos, com a autorização que dás na janela do sistema e que podes retirar a qualquer momento.</li>
+  <li><strong>Compras:</strong> execução do contrato de compra, tratada pela Apple.</li>
+</ul>
+<p>Não há definição de perfis, decisões automatizadas, publicidade nem analytics.</p>
+
+<h2>7. Prestadores de serviços e transferências internacionais</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Google Ireland Limited / Google LLC): início de sessão anónimo e base de dados das salas, como nosso subcontratante, ao abrigo dos Firebase Data Processing Terms. Os dados das salas ficam na UE. A Google pode tratar o endereço IP de cada pedido e aceder a dados a partir de fora da UE; essas transferências estão cobertas pelo Quadro de Privacidade de Dados UE-EUA e por Cláusulas Contratuais-Tipo. Ver <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Apple</strong>: compras na App Store e HealthKit, ao abrigo da política de privacidade da Apple (<a href="https://www.apple.com/pt/legal/privacy/">apple.com/pt/legal/privacy</a>).</li>
+</ul>
+<p>Não vendemos nem partilhamos dados com mais ninguém.</p>
+
+<h2>8. Os teus direitos</h2>
+<p>Ao abrigo do RGPD tens direito de acesso, retificação e apagamento dos teus dados pessoais, de limitação e de oposição ao tratamento e de portabilidade. Para os exercer, envia-nos um email. Como a app não tem contas e o identificador das salas é anónimo, normalmente não conseguimos associar dados a ti; a maior parte pode ser apagada diretamente por ti:</p>
+<ul>
+  <li>sair ou fechar uma sala de grupo na app;</li>
+  <li>apagar o histórico desinstalando a app;</li>
+  <li>retirar o acesso à Saúde nas definições da app Saúde.</li>
+</ul>
+<p>Tens também o direito de apresentar reclamação a uma autoridade de controlo. Em Portugal é a Comissão Nacional de Proteção de Dados (CNPD), <a href="https://www.cnpd.pt">www.cnpd.pt</a>; podes também contactar a autoridade do país da UE onde vives.</p>
+
+<h2>9. Segurança</h2>
+<p>Os dados das salas circulam por HTTPS e estão protegidos por regras da base de dados que só permitem os acessos descritos na secção 4. O token da sessão anónima fica guardado no Porta-chaves do relógio.</p>
+
+<h2>10. Crianças</h2>
+<p>A app não pede informação pessoal e não se dirige a crianças com menos de 13 anos. Se achares que uma criança nos forneceu dados pessoais, contacta-nos e apagamo-los.</p>
+
+<h2>11. Alterações</h2>
+<p>Podemos atualizar esta política, por exemplo quando a app muda. A data no topo indica a versão mais recente, que está sempre disponível neste endereço.</p>
+
+<h2>12. Contacto</h2>
+<p>André Machado — <a href="mailto:apps.support.cbaxe6@gmail.com">apps.support.cbaxe6@gmail.com</a></p>
+
+<footer>© 2026 André Machado. Todos os direitos reservados.</footer>
+</body>
+</html>

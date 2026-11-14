@@ -13,54 +13,67 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p><strong>FourCourt</strong> (formerly Padel Tennis Smart) — Last updated: November 2026</p>
+<p><strong>FourCourt</strong> (formerly Padel Tennis Smart) — Last updated: 14 November 2026 · <a href="pt/">Versão em português</a></p>
 
-<h2>1. Overview</h2>
-<p>FourCourt is an Apple Watch app developed by André Machado for scoring padel and tennis matches. This page explains what data the App handles and how. The App does not require an account. The App runs on Apple Watch only; an optional iPhone companion shows your match history.</p>
+<h2>1. Who is responsible</h2>
+<p>FourCourt is an Apple Watch app developed by André Machado, an individual developer based in Portugal, who is the data controller for the processing described here. Contact: <a href="mailto:apps.support.cbaxe6@gmail.com">apps.support.cbaxe6@gmail.com</a>.</p>
+<p>In short: the App has no accounts and does not ask for your name, email, contacts or location. Solo matches, match history and Health data never leave your watch. Only the optional group rooms use the internet, with an anonymous identifier.</p>
 
-<h2>2. Match History</h2>
-<p>The App stores your match history (scores, players, dates, duration) locally on your Apple Watch. If you use the iPhone companion, it receives a copy of that history from your watch through Apple's Watch Connectivity and keeps it on your iPhone. This data is never sent to our servers or any third party. Uninstalling the App removes the history stored on the watch and the companion's copy on the iPhone.</p>
+<h2>2. Match history (on your watch only)</h2>
+<p>The App stores your match history (scores, dates, duration and the generic player labels) locally on your Apple Watch. It is never sent to us or to any third party. Uninstalling the App deletes it.</p>
 
-<h2>3. Health &amp; Heart Rate (HealthKit)</h2>
-<p>With your permission, the App reads your heart rate from Apple Health during a match to show live stats, and can save the match as a workout in Apple Health (including duration and heart rate). This information is handled by Apple's HealthKit and stays on your Apple Watch and in your iCloud Health data under Apple's control. Heart rate and workout data are never included in group rooms and are not sent to any external server or third party. You can grant or revoke Health access at any time in the Watch/Health settings, and the App still works for scoring without it.</p>
+<h2>3. Health and heart rate (HealthKit, optional)</h2>
+<p>With your permission, the App reads your heart rate from Apple Health during a match and can save the match as a workout in Apple Health (duration and heart rate). This data is handled by Apple's HealthKit and stays on your devices and in your Health data under Apple's control. It is never included in group rooms, never sent to any server or third party, and never used for advertising. You can revoke Health access at any time in the Health settings; scoring works without it.</p>
 
-<h2>4. Voice Commands (optional)</h2>
-<p>The App lets you record points using voice commands, using your device's microphone and the operating system's speech recognition service (Apple). Audio is processed by the OS to convert speech to text — the App does not record, store, or send audio to any external server. This permission is optional; manual score entry works without it.</p>
-
-<h2>5. Group Rooms (optional)</h2>
-<p>Solo scoring works fully offline and never uses the network. Group play is optional: when you create or join a group room, devices in the same room keep the score in sync through Google Firebase.</p>
+<h2>4. Group rooms (optional)</h2>
+<p>Solo scoring works offline. When you choose to create or join a group room, the watches in that room keep one shared score through Google Firebase.</p>
 <ul>
-  <li><strong>Anonymous sign-in.</strong> The first time you use group play, the App signs your watch in to Firebase Authentication anonymously. This creates a random identifier stored on your watch. It is not linked to your name, email address, Apple ID or any other personal information, and it is used only so the database can check which device may write to a room. It is not used for advertising or tracking.</li>
-  <li><strong>What a room contains.</strong> The 4-character room code; the room creation time and start time; the team (A or B) and a generic label for each player ("Player 1" to "Player 4"; the App does not ask for or send names); a last-seen timestamp used to show who is still connected; and the current match score (sets, games, serve, winner and the rules chosen for the match).</li>
-  <li><strong>Where it is stored.</strong> In a Firebase Realtime Database in the European Union (europe-west1, Belgium). The App sends this data over encrypted HTTPS connections.</li>
-  <li><strong>Who can access it.</strong> Only devices that signed in anonymously can read a room, and the database rules allow each device to change only its own player entry. Only the room's host can create or delete the room.</li>
-  <li><strong>How long it is kept.</strong> The host's watch deletes the room when the host ends group play, and each guest's entry is removed when that guest leaves. The App does not show or join rooms older than 6 hours. If the App is closed unexpectedly or a watch loses its connection, the room may remain in the database with the contents listed above until it is removed. The App does not currently delete such leftover rooms automatically.</li>
+  <li><strong>Anonymous sign-in.</strong> The first time you use group play, the App signs your watch in to Firebase Authentication anonymously. This creates a random identifier, kept in your watch's Keychain. It is not linked to your name, email, Apple ID or any other information about you.</li>
+  <li><strong>What a room contains.</strong> The 6-character room code; when the room was created and started; for each player, the anonymous identifier, the team (A or B), a generic label ("Player 1" to "Player 4") and a last-seen time; and the current score and match rules. The App does not ask for or send names.</li>
+  <li><strong>Where it is stored.</strong> In a Firebase Realtime Database in the European Union (europe-west1, Belgium), over encrypted HTTPS connections.</li>
+  <li><strong>Who can access it.</strong> Only signed-in devices that know the room code can read a room; rooms cannot be listed. Each device can change only its own player entry, only players in the room can update the score, and only the host can create, start or delete the room.</li>
+  <li><strong>How long it is kept.</strong> The host's watch deletes the room when the host closes it, and a guest's entry is removed when the guest leaves. The App ignores rooms older than 6 hours. If a watch loses its connection or the App is closed unexpectedly, a leftover room with the contents above may stay in the database until it is deleted; it contains no information that identifies you.</li>
   <li><strong>What is never sent.</strong> Your name, contacts, location, photos, Apple ID, health data or heart rate.</li>
 </ul>
 
-<h2>6. In-App Purchases</h2>
-<p>The Premium feature is purchased and processed directly by Apple through the App Store using StoreKit. The App verifies your entitlement locally via Apple's transaction records and has no access to payment details (card numbers, etc.), which are handled entirely by Apple. The App stores the result of that check on your device. The App does not use any third-party purchase or subscription manager.</p>
+<h2>5. In-app purchase</h2>
+<p>FourCourt Premium is bought and processed by Apple through the App Store. The App checks your purchase with Apple's StoreKit on your device and stores the result locally. We never see your payment details, name or Apple ID. The App does not use any third-party purchase service.</p>
 
-<h2>7. Third-Party Services</h2>
+<h2>6. Legal basis (GDPR)</h2>
 <ul>
-  <li>Apple App Store — payment processing and purchase verification</li>
-  <li>Apple HealthKit — heart rate and workout data (on-device)</li>
-  <li>Apple speech recognition — voice commands, when enabled</li>
-  <li>Google Firebase (Authentication and Realtime Database) — anonymous sign-in and score sync for group rooms only. Google, as the operator of Firebase, may process the IP address of each request. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Group rooms:</strong> performance of the service you request (Article 6(1)(b) GDPR). Without the anonymous identifier and room data, the shared score cannot work.</li>
+  <li><strong>Health data:</strong> processed only on your devices, with the permission you give in the system dialog, which you can withdraw at any time.</li>
+  <li><strong>Purchases:</strong> performance of the purchase contract, handled by Apple.</li>
 </ul>
-<p>The App does not use advertising, analytics, or behavioral tracking.</p>
+<p>There is no profiling, no automated decision-making, no advertising and no analytics.</p>
 
-<h2>8. Your Choices</h2>
-<p>Match history and Health data stay on your devices, so you can delete them at any time by clearing the App's data, revoking Health access, or uninstalling the App. You can leave a group room at any time from the App. The App has no account, so there is nothing to close. Because the anonymous Firebase identifier is not linked to you, it cannot be matched to you; it is not removed automatically when you uninstall the App. For purchase-related data held by Apple, requests can be made through Apple's support channels.</p>
+<h2>7. Service providers and international transfers</h2>
+<ul>
+  <li><strong>Google Firebase</strong> (Google Ireland Limited / Google LLC): anonymous sign-in and room database, as our processor under the Firebase Data Processing Terms. Room data is stored in the EU. Google may process the IP address of each request and may access data from outside the EU; such transfers are covered by the EU-U.S. Data Privacy Framework and Standard Contractual Clauses. See <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Apple</strong>: App Store purchases and HealthKit, under Apple's own privacy policy (<a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>).</li>
+</ul>
+<p>We do not sell or share data with anyone else.</p>
 
-<h2>9. Children's Privacy</h2>
-<p>The App does not knowingly collect data from children under 13.</p>
+<h2>8. Your rights</h2>
+<p>Under the GDPR you have the right to access, rectify and erase your personal data, to restrict or object to its processing, and to data portability. To exercise them, email us. Because the App has no accounts and the room identifier is anonymous, we usually cannot link any data to you; most data can be removed directly by you:</p>
+<ul>
+  <li>leave or close a group room from the App;</li>
+  <li>delete match history by uninstalling the App;</li>
+  <li>revoke Health access in the Health settings.</li>
+</ul>
+<p>You also have the right to lodge a complaint with a supervisory authority. In Portugal this is the Comissão Nacional de Proteção de Dados (CNPD), <a href="https://www.cnpd.pt">www.cnpd.pt</a>; you may also contact the authority of the EU country where you live.</p>
 
-<h2>10. Changes</h2>
-<p>We may update this policy. The latest version will always be available at this URL.</p>
+<h2>9. Security</h2>
+<p>Room data travels over HTTPS and is protected by database rules that only allow the access described in section 4. The anonymous sign-in token is stored in the watch's Keychain.</p>
 
-<h2>11. Contact</h2>
-<p><a href="mailto:apps.support.cbaxe6@gmail.com">apps.support.cbaxe6@gmail.com</a></p>
+<h2>10. Children</h2>
+<p>The App does not ask for any personal information and is not directed at children under 13. If you believe a child has provided personal data, contact us and we will delete it.</p>
+
+<h2>11. Changes</h2>
+<p>We may update this policy, for example when the App changes. The date at the top shows the latest version, which is always available at this URL.</p>
+
+<h2>12. Contact</h2>
+<p>André Machado — <a href="mailto:apps.support.cbaxe6@gmail.com">apps.support.cbaxe6@gmail.com</a></p>
 
 <footer>© 2026 André Machado. All rights reserved.</footer>
 </body>
